@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+  <title>Hotels</title>
+</head>
+
+<body class=" font-headingFont relative">
+  <!--! SECTION ONE -->
+  <!--? Implemented an overlay and a modal -->
+  <section
+    class="sectionOne text-whiteText pt-10  md:pl-20 md:pr-10 px-5 max-w-full md:h-screen relative pb-16 bg-mobileNav">
+    <!-- Overlay Div -->
+    <div class="overlay"></div>
+    <!-- Serves as a Second  Section, Ends with the mobile nav ul-->
+    <div class="flex justify-center">
+
+
+
+      <header class="flex items-center justify-center md:justify-between  w-full">
+
+        <!-- Desktop View -->
+        <div class="md:block hidden font-headingFont text-white text-4xl font-bold cursor-pointer">
+          <h1>Hotels</h1>
+        </div>
+
+        <!-- MOBILE VIEW -->
+        <div class="flex flex-row items-center w-full justify-between md:hidden">
+          <!-- HAMBURGER MENU -->
+          <button id="menu-btn" class="block hamburger md:hidden focus:outline-none items-end">
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+          </button>
+
+          <!-- Mobile View -->
+          <div class=" font-headingFont text-white text-3xl font-bold cursor-pointer">
+            <h1 class="flex justify-center">Hotels</h1>
+          </div>
+
+          <!-- Mobile View -->
+          <div>
+            <div class="md:hidden block ">
+              <button
+                class="bg-yellowBG text-blueText rounded-md cursor-pointer p-2 px-3 font-semibold text-base items-end">Gallery</button>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Desktop View -->
+        <nav class="">
+          <ul class="md:flex text-whiteText md:gap-8 font-semibold text-base md:items-center hidden">
+            <li>
+              <a class="text-whiteText cursor-pointer active:underline hover:underline" href="#">About us</a>
+            </li>
+            <li>
+              <a class="text-whiteText cursor-pointer active:underline hover:underline" href="#">Products</a>
+            </li>
+            <li>
+              <a class="text-whiteText cursor-pointer active:underline hover:underline" href="#">Services</a>
+            </li>
+            <li>
+              <a class="text-whiteText cursor-pointer active:underline hover:underline" href="#">Blog</a>
+            </li>
+            <li>
+              <a class="text-whiteText cursor-pointer active:underline hover:underline" href="#">Contact</a>
+            </li>
+            <li class="bg-yellowBG text-blueText rounded-md cursor-pointer p-2 px-3">
+              <a class="" href="#">Gallery</a>
+            </li>
+          </ul>
+        </nav>
+
+
+      </header>
+
+      <!-- MOBILE SCREEN NAV -->
+      <div class="md:hidden">
+        <ul id="menu"
+          class="nav-menu text-whiteText absolute font-semibold text-base items-center hidden gap-8 bg-mobileNav flex-col justify-center pt-7 rounded-tr-lg rounded-br-lg z-50">
+          <li>
+            <a class="text-whiteText cursor-pointer active:underline hover:underline" href="#">About us</a>
+          </li>
+          <li>
+            <a class="text-whiteText cursor-pointer active:underline hover:underline" href="#">Products</a>
+          </li>
+          <li>
+            <a class="text-whiteText cursor-pointer active:underline hover:underline" href="#">Services</a>
+          </li>
+          <li>
+            <a class="text-whiteText cursor-pointer active:underline hover:underline" href="#">Blog</a>
+          </li>
+          <li>
+            <a class="text-whiteText cursor-pointer active:underline hover:underline" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- SECTION-ONE CONTENT -->
+
+    <!-- Main Div -->
+    <div
+      class="flex md:flex-row flex-col mt-20 md:mt-16 justify-center items-center md:justify-between gap-20 md:gap-0 sectionOneMain">
+      <!-- First half -->
+      <div>
+        <!-- Headings -->
+        <div class="mb-5">
+          <h2 class="text-white font-semibold text-2xl mb-4 text-center ">ESCAPE THE HUSTLE AND
+            BUSTLE.
+          </h2>
+          <h2 class="text-white font-normal text-2xl text-center md:text-left">DISCOVER TRANQUILITY IN OUR <br
+              class="md:block hidden">
+            BEACHFRONT PARADISE.</h2>
+
+        </div>
+
+        <!-- Paragraph Text -->
+        <p class="text-white  font-normal text-base font-bodyFont leading-snug mb-10 text-center md:text-left">
+          Amidst
+          the chaos of modern
+          life, our
+          resort
+          emerges as an oasis
+          of<br class="md:block hidden"> serenity. Tucked away in a pristine
+          natural setting. It offers a refuge<br class="md:block hidden"> from the daily hustle and bustle.</p>
+
+        <!-- Buttons -->
+
+        <div class="flex md:flex-row flex-col justify-start items-center md:gap-3 gap-4">
+          <button
+            class=" text-blueText bg-whiteText p-2 px-6 rounded-lg font-semibold cursor-pointer hover:bg-transparent md:hover:text-whiteText border-white border-2 hover:text-white">BOOK
+            YOUR ESCAPE</button>
+          <button
+            class="trans-btn p-2 px-9 md:px-6 text-blueText font-semibold rounded-lg border border-white  cursor-pointer bg-whiteText md:text-whiteText">Learn
+            more</button>
+        </div>
+
+      </div>
+
+      <!-- Second half -->
+      <div>
+        <!-- Mobile View -->
+        <div class="md:hidden flex flex-col gap-2 font-headingFont">
+          <!-- First Button -->
+          <div class="flex mobile-blur-div rounded-lg  p-1" id="triggerDiv">
+            <!-- Mini -->
+            <div class="flex w-full gap-2">
+              <h5 class="flex items-center gap-2 text-left text-blueText font-semibold ">
+                <span>
+                  <img src="./SectionOneAssets/calendar-01 (1).png" class="w-9 h-9" />
+                </span>
+                Check-in - Check-out
+                <span>
+                  <img src="./SectionOneAssets/Vector 2.png" class="h-8" />
+                </span>
+              </h5>
+
+              <h5 class="flex items-center gap-1 text-left text-blueText font-semibold ">
+                <span>
+                  <img src="./SectionOneAssets/line-md_account.png" class="w-6 h-6" />
+                </span>
+                Adult
+              </h5>
+            </div>
+
+          </div>
+
+          <!-- Popup  -->
+          <!-- Div Serves as an Overlay -->
+          <div id="popup" class="hidden absolute inset-0 bg-slate-500 bg-opacity-70 items-center justify-center ">
+            <!-- Main Popup Content -->
+            <div class="flex justify-center">
+              <div class="mobile-blur-div font-headingFont w-96 rounded-lg">
+                <!-- TOP -->
+                <div class="flex hotel-top">
+                  <!-- Individual top -->
+                  <div class="bg-whiteText flex p-2 px-3 gap-1 pl-3 rounded-tl-lg cursor-pointer">
+                    <img src="./SectionOneAssets/hotel-02.png" class="w-5 h-5" />
+                    <h5 class="font-semibold text-blueText">Hotel</h5>
+                  </div>
+
+                  <!-- Individual top -->
+                  <div class="bg-blueBG flex p-2 px-3 gap-1 pr-4 cursor-pointer text-center">
+                    <img src="./SectionOneAssets/calendar-01.png" class="w-5 h-5 " />
+                    <h5 class="font-semibold text-white">Monthly stays </h5>
+                  </div>
+                  <!-- Individual top -->
+                  <div class="bg-blueBG flex p-2 px-3 gap-1 pr-4 rounded-tr-lg cursor-pointer text-center">
+                    <img src="./SectionOneAssets/Vector.png" class="w-5 h-5" />
+                    <h5 class="font-semibold text-white">Private stays</h5>
+                  </div>
+                </div>
+
+                <!-- BOTTOM -->
+                <div class="p-8 flex flex-col gap-4">
+                  <div class="flex justify-between">
+                    <!-- 1st set -->
+                    <div class="flex flex-col gap-5">
+                      <!-- Individual set -->
+                      <div class="flex flex-col gap-1 text-white">
+                        <div class="flex items-center gap-1">
+                          <h4 class="font-medium">Location</h4>
+                          <img src="./SectionOneAssets/arrow-down-01-sharp.png" class="w-4 h-4" />
+                        </div>
+                        <h6 class="text-xs opacity-50 font-semibold">CHEVRON</h6>
+
+                      </div>
+
+                      <!-- Individual set -->
+                      <div class="flex flex-col gap-1 text-white">
+                        <div class="flex items-center gap-1">
+                          <h4 class="font-medium">Check-in</h4>
+                          <img src="./SectionOneAssets/arrow-down-01-sharp.png" class="w-4 h-4" />
+                        </div>
+                        <h6 class="text-xs opacity-50 font-semibold">12-09-2024</h6>
+                      </div>
+
+
+                      <!-- Individual set -->
+                      <div class="flex flex-col gap-1 text-white">
+                        <div class="flex items-center gap-1">
+                          <h4 class="font-medium">Adults</h4>
+                          <img src="./SectionOneAssets/arrow-down-01-sharp (1).png" class="w-4 h-4" />
+                        </div>
+                        <h6 class="text-sm opacity-50 font-semibold">4</h6>
+                      </div>
+
+                      <!-- Individual set -->
+                      <div class="flex flex-col gap-1 text-white opacity-10">
+                        <div class="flex items-center gap-1">
+                          <h4 class="font-medium">Check-in</h4>
+                          <img src="./SectionOneAssets/arrow-down-01-sharp.png" class="w-4 h-4" />
+                        </div>
+                        <h6 class="text-xs  font-semibold">12-09-2024</h6>
+                      </div>
+
+                      <!-- Individual set -->
+                      <div class="flex flex-col gap-1 text-white opacity-10">
+                        <div class="flex items-center gap-1">
+                          <h4 class="font-medium">Adults</h4>
+                          <img src="./SectionOneAssets/arrow-down-01-sharp (1).png" class="w-4 h-4" />
+                        </div>
+                        <h6 class="text-sm  font-semibold">4</h6>
+                      </div>
+
+
+                    </div>
+
+                    <!-- Second Set -->
+                    <div class="flex flex-col gap-5">
+                      <!-- Individual set -->
+                      <button id="closeButton">
+                        <ion-icon name="close-sharp" size="large" class="text-blueText"></ion-icon>
+
+                      </button>
+
+                      <div class="flex flex-col gap-1 text-white opacity-0 pointer-events-auto">
+                        <div class="flex items-center gap-1">
+                          <h4 class="font-medium cursor-pointer">Location</h4>
+                          <img src="./SectionOneAssets/arrow-down-01-sharp.png" class="w-4 h-4" />
+                        </div>
+                        <h6 class="text-xs  font-semibold">CHEVRON</h6>
+
+                      </div>
+
+                      <!-- Individual set -->
+                      <div class="flex flex-col gap-1 text-white">
+                        <div class="flex items-center gap-1">
+                          <h4 class="font-medium">Check-out</h4>
+                          <img src="./SectionOneAssets/arrow-down-01-sharp.png" class="w-4 h-4" />
+                        </div>
+                        <h6 class="text-xs opacity-50 font-semibold">28-09-2024</h6>
+                      </div>
+
+
+                      <!-- Individual set -->
+                      <div class="flex flex-col gap-1 text-white">
+                        <div class="flex items-center gap-1">
+                          <h4 class="font-medium">Children</h4>
+                          <img src="./SectionOneAssets/arrow-down-01-sharp (1).png" class="w-4 h-4" />
+                        </div>
+                        <h6 class="text-sm opacity-50 font-semibold">3</h6>
+                      </div>
+
+                      <!-- Individual set -->
+                      <div class="flex flex-col gap-1 text-white opacity-10">
+                        <div class="flex items-center gap-1">
+                          <h4 class="font-medium">Check-in</h4>
+                          <img src="./SectionOneAssets/arrow-down-01-sharp.png" class="w-4 h-4" />
+                        </div>
+                        <h6 class="text-xs  font-semibold">12-09-2024</h6>
+                      </div>
+
+                      <!-- Individual set -->
+                      <div class="flex flex-col gap-1 text-white opacity-10">
+                        <div class="flex items-center gap-1">
+                          <h4 class="font-medium">Adults</h4>
+                          <img src="./SectionOneAssets/arrow-down-01-sharp (1).png" class="w-4 h-4" />
+                        </div>
+                        <h6 class="text-sm  font-semibold">4</h6>
+                      </div>
+
+
+                    </div>
+
+                  </div>
+
+                  <div class="flex justify-center items-center mt-2">
+                    <button
+                      class="bg-yellowBG flex gap-2 p-2 px-5 rounded-lg font-semibold cursor-pointer text-blueText">CHECK
+                      AVAILABILITY
+                      <span><img src="./SectionOneAssets/search.png" class="w-5 h-5" /></span>
+                    </button>
+                  </div>
+
+
+                </div>
+
+
+              </div>
+              <!-- <div>
+                <button class=" text-blueText p-2 pl-5 pr-6 triangle-button text-right ">New</button>
+              </div> -->
+            </div>
+          </div>
+          <!-- End of Popup -->
+
+          <!-- Second Button -->
+          <div class="flex justify-center items-center mt-2">
+            <button class="text-blueText bg-yellowBG flex gap-2 p-2 px-16 rounded-lg font-semibold cursor-pointer">CHECK
+              AVAILABILITY
+              <span><img src="./SectionOneAssets/search.png" class="w-5 h-5" /></span>
+            </button>
+          </div>
+        </div>
+
+
+        <!-- Desktop View -->
+        <div class="md:block hidden">
+          <div class="md:flex hidden gap-5 ">
+            <div class="blur-div font-headingFont">
+              <!-- TOP -->
+              <div class="flex hotel-top">
+                <!-- Individual top -->
+                <div class="bg-whiteText flex p-2 px-3 gap-1 pl-3 rounded-tl-lg cursor-pointer">
+                  <img src="./SectionOneAssets/hotel-02.png" class="w-5 h-5" />
+                  <h5 class="font-semibold text-blueText">Hotel</h5>
+                </div>
+
+                <!-- Individual top -->
+                <div class="bg-blueBG flex p-2 px-3 gap-1 pr-4 cursor-pointer">
+                  <img src="./SectionOneAssets/calendar-01.png" class="w-5 h-5" />
+                  <h5 class="font-semibold text-white">Monthly stays </h5>
+                </div>
+                <!-- Individual top -->
+                <div class="bg-blueBG flex p-2 px-3 gap-1 pr-4 rounded-tr-lg cursor-pointer">
+                  <img src="./SectionOneAssets/Vector.png" class="w-5 h-5" />
+                  <h5 class="font-semibold text-white">Private stays</h5>
+                </div>
+              </div>
+
+              <!-- BOTTOM -->
+              <div class="p-8 flex flex-col gap-4">
+                <div class="flex justify-between">
+                  <!-- 1st set -->
+                  <div class="flex flex-col gap-5">
+                    <!-- Individual set -->
+                    <div class="flex flex-col gap-1 text-white">
+                      <div class="flex items-center gap-1">
+                        <h4 class="font-medium">Location</h4>
+                        <img src="./SectionOneAssets/arrow-down-01-sharp.png" class="w-4 h-4" />
+                      </div>
+                      <h6 class="text-xs opacity-50 font-semibold">CHEVRON</h6>
+
+                    </div>
+
+                    <!-- Individual set -->
+                    <div class="flex flex-col gap-1 text-white">
+                      <div class="flex items-center gap-1">
+                        <h4 class="font-medium">Check-in</h4>
+                        <img src="./SectionOneAssets/arrow-down-01-sharp.png" class="w-4 h-4" />
+                      </div>
+                      <h6 class="text-xs opacity-50 font-semibold">12-09-2024</h6>
+                    </div>
+
+
+                    <!-- Individual set -->
+                    <div class="flex flex-col gap-1 text-white">
+                      <div class="flex items-center gap-1">
+                        <h4 class="font-medium">Adults</h4>
+                        <img src="./SectionOneAssets/arrow-down-01-sharp (1).png" class="w-4 h-4" />
+                      </div>
+                      <h6 class="text-sm opacity-50 font-semibold">4</h6>
+                    </div>
+
+                    <!-- Individual set -->
+                    <div class="flex flex-col gap-1 text-white opacity-10">
+                      <div class="flex items-center gap-1">
+                        <h4 class="font-medium">Check-in</h4>
+                        <img src="./SectionOneAssets/arrow-down-01-sharp.png" class="w-4 h-4" />
+                      </div>
+                      <h6 class="text-xs  font-semibold">12-09-2024</h6>
+                    </div>
+
+                    <!-- Individual set -->
+                    <div class="flex flex-col gap-1 text-white opacity-10">
+                      <div class="flex items-center gap-1">
+                        <h4 class="font-medium">Adults</h4>
+                        <img src="./SectionOneAssets/arrow-down-01-sharp (1).png" class="w-4 h-4" />
+                      </div>
+                      <h6 class="text-sm  font-semibold">4</h6>
+                    </div>
+
+
+                  </div>
+
+                  <!-- Second Set -->
+                  <div class="flex flex-col gap-5">
+                    <!-- Individual set -->
+                    <div class="flex flex-col gap-1 text-white opacity-0 pointer-events-auto">
+                      <div class="flex items-center gap-1">
+                        <h4 class="font-medium cursor-pointer">Location</h4>
+                        <img src="./SectionOneAssets/arrow-down-01-sharp.png" class="w-4 h-4" />
+                      </div>
+                      <h6 class="text-xs  font-semibold">CHEVRON</h6>
+
+                    </div>
+
+                    <!-- Individual set -->
+                    <div class="flex flex-col gap-1 text-white">
+                      <div class="flex items-center gap-1">
+                        <h4 class="font-medium">Check-out</h4>
+                        <img src="./SectionOneAssets/arrow-down-01-sharp.png" class="w-4 h-4" />
+                      </div>
+                      <h6 class="text-xs opacity-50 font-semibold">28-09-2024</h6>
+                    </div>
+
+
+                    <!-- Individual set -->
+                    <div class="flex flex-col gap-1 text-white">
+                      <div class="flex items-center gap-1">
+                        <h4 class="font-medium">Children</h4>
+                        <img src="./SectionOneAssets/arrow-down-01-sharp (1).png" class="w-4 h-4" />
+                      </div>
+                      <h6 class="text-sm opacity-50 font-semibold">3</h6>
+                    </div>
+
+                    <!-- Individual set -->
+                    <div class="flex flex-col gap-1 text-white opacity-10">
+                      <div class="flex items-center gap-1">
+                        <h4 class="font-medium">Check-in</h4>
+                        <img src="./SectionOneAssets/arrow-down-01-sharp.png" class="w-4 h-4" />
+                      </div>
+                      <h6 class="text-xs  font-semibold">12-09-2024</h6>
+                    </div>
+
+                    <!-- Individual set -->
+                    <div class="flex flex-col gap-1 text-white opacity-10">
+                      <div class="flex items-center gap-1">
+                        <h4 class="font-medium">Adults</h4>
+                        <img src="./SectionOneAssets/arrow-down-01-sharp (1).png" class="w-4 h-4" />
+                      </div>
+                      <h6 class="text-sm  font-semibold">4</h6>
+                    </div>
+
+
+                  </div>
+
+                </div>
+                <div class="flex justify-center items-center mt-2">
+                  <button
+                    class="bg-yellowBG flex gap-2 p-2 px-5 rounded-lg font-semibold cursor-pointer text-blueText">CHECK
+                    AVAILABILITY
+                    <span><img src="./SectionOneAssets/search.png" class="w-5 h-5" /></span>
+                  </button>
+                </div>
+
+
+              </div>
+
+
+            </div>
+            <div>
+              <button class=" text-blueText p-2 pl-5 pr-6 triangle-button text-right ">New</button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </section>
+
+  <!--! SECTION TWO -->
+  <!--? Implemented a swiper.js -->
+  <section class="sectionTwo bg-mobileNav  font-headingFont py-10">
+    <div class="flex justify-end px-5 mb-14">
+      <div class="flex md:justify-between md:w-2/3 justify-center items-center text-center">
+
+        <h2 class="text-center text-2xl font-semibold text-whiteText uppercase justify-center">Discover Your
+          Perfect Retreat
+          <span class="flex justify-center mt-1"><img src="./SectionTwoAssets/Rectangle 2.png" class="h-1" /></span>
+        </h2>
+        <h5 class="text-yellowBG justify-end items-center hidden md:block font-semibold"><a href="#"
+            class="hover:underline">View all
+            accommodations</a>
+
+        </h5>
+      </div>
+    </div>
+
+
+    <div class="swiper mySwiper w-5/6">
+      <div class="swiper-wrapper py-5">
+
+        <!--! First Slide -->
+        <div class="swiper-slide md:odd:w-1/2 rounded-xl shadow-2xl bg-mobileNav mb-5 border border-blueText">
+          <div class="rounded-lg">
+            <img src="./SectionTwoAssets/unsplash_T5pL6ciEn-I.png" class="h-1/2 object-cover rounded-lg" />
+          </div>
+
+          <div class="px-4 pb-5 text-white mt-5 font-headingFont">
+            <div class="flex justify-between">
+              <h5 class="font-semibold">Deluxe Oceanfront Suite</h5>
+              <p class="font-light">
+                <span class="font-semibold">$</span><span class="text-yellowBG font-semibold">399</span><span
+                  class="font-semibold">/</span><span class="font-light text-sm">night</span>
+              </p>
+            </div>
+            <p class="mt-4 font-light text-sm">Indulge in luxury with our deluxe oceanfront suite, offering panoramic
+              views of
+              the
+              sparkling sea. This
+              spacious suite features a king-size bed, a private balcony with direct ocean access, a separate living
+              area, and a luxurious bathroom with a whirlpool tub.</p>
+            <p class="mt-4 font-normal italic text-sm ">Amenities: Flat-screen TV, mini-bar, free Wi-Fi,
+              coffee maker,
+              in-room Jacuzzi.</p>
+          </div>
+
+        </div>
+
+        <!--! Second Slide -->
+        <div class="swiper-slide md:even:w-1/2 rounded-xl shadow-2xl bg-mobileNav mb-5 border border-blueText">
+          <div class="rounded-lg">
+            <img src="./SectionTwoAssets/unsplash_T5pL6ciEn-I (2).png" class="h-1/2 object-cover rounded-lg" />
+          </div>
+
+          <div class="px-4 pb-5 text-white mt-5 font-headingFont">
+            <div class="flex justify-between">
+              <h5 class="font-semibold">Family Mountain Lodge</h5>
+              <p class="font-light">
+                <span class="font-semibold">$</span><span class="text-yellowBG font-semibold">539</span><span
+                  class="font-semibold">/</span><span class="font-light text-sm">night</span>
+              </p>
+            </div>
+            <p class="mt-4 font-light text-sm">Bring the whole family to our FAMILY MOUNTAIN LODGE, a spacious retreat
+              with breathtaking mountain vistas. This lodge features two bedrooms (One with a king-size bed and one with
+              twin beds), a fully equipped dining area, and a private deck for enjoying views.</p>
+            <p class="mt-4 font-normal italic text-sm ">Amenities: Full kitchen, dining area, flat-screen TV’s in both
+              bedrooms, free Wi-Fi, barbecue grill on the deck.</p>
+          </div>
+
+        </div>
+
+        <!--! Third Slide -->
+        <div class="swiper-slide md:odd:w-1/2 rounded-xl shadow-2xl bg-mobileNav mb-5 border border-blueText">
+          <div class="rounded-lg">
+            <img src="./SectionTwoAssets/unsplash_T5pL6ciEn-I.png" class="h-1/2 object-cover rounded-lg" />
+          </div>
+
+          <div class="px-4 pb-5 text-white mt-5 font-headingFont">
+            <div class="flex justify-between">
+              <h5 class="font-semibold">Deluxe Oceanfront Suite</h5>
+              <p class="font-light">
+                <span class="font-semibold">$</span><span class="text-yellowBG font-semibold">399</span><span
+                  class="font-semibold">/</span><span class="font-light text-sm">night</span>
+              </p>
+            </div>
+            <p class="mt-4 font-light text-sm">Indulge in luxury with our deluxe oceanfront suite, offering panoramic
+              views of
+              the
+              sparkling sea. This
+              spacious suite features a king-size bed, a private balcony with direct ocean access, a separate living
+              area, and a luxurious bathroom with a whirlpool tub.</p>
+            <p class="mt-4 font-normal italic text-sm ">Amenities: Flat-screen TV, mini-bar, free Wi-Fi,
+              coffee maker,
+              in-room Jacuzzi.</p>
+          </div>
+
+        </div>
+
+        <!--! Fourth Slide  -->
+        <div class="swiper-slide md:even:w-1/2 rounded-xl shadow-2xl bg-mobileNav mb-5 border border-blueText">
+          <div class="rounded-lg">
+            <img src="./SectionTwoAssets/unsplash_T5pL6ciEn-I (2).png" class="h-1/2 object-cover rounded-lg" />
+          </div>
+
+          <div class="px-4 pb-5 text-white mt-5 font-headingFont">
+            <div class="flex justify-between">
+              <h5 class="font-semibold">Family Mountain Lodge</h5>
+              <p class="font-light">
+                <span class="font-semibold">$</span><span class="text-yellowBG font-semibold">539</span><span
+                  class="font-semibold">/</span><span class="font-light text-sm">night</span>
+              </p>
+            </div>
+            <p class="mt-4 font-light text-sm">Bring the whole family to our FAMILY MOUNTAIN LODGE, a spacious retreat
+              with breathtaking mountain vistas. This lodge features two bedrooms (One with a king-size bed and one with
+              twin beds), a fully equipped dining area, and a private deck for enjoying views.</p>
+            <p class="mt-4 font-normal italic text-sm ">Amenities: Full kitchen, dining area, flat-screen TV’s in both
+              bedrooms, free Wi-Fi, barbecue grill on the deck.</p>
+          </div>
+
+        </div>
+
+        <!--! Fifth Slide -->
+        <div class="swiper-slide md:odd:w-1/2 rounded-xl shadow-2xl bg-mobileNav mb-5 border border-blueText">
+          <div class="rounded-lg">
+            <img src="./SectionTwoAssets/unsplash_T5pL6ciEn-I.png" class="h-1/2 object-cover rounded-lg" />
+          </div>
+
+          <div class="px-4 pb-5 text-white mt-5 font-headingFont">
+            <div class="flex justify-between">
+              <h5 class="font-semibold">Deluxe Oceanfront Suite</h5>
+              <p class="font-light">
+                <span class="font-semibold">$</span><span class="text-yellowBG font-semibold">399</span><span
+                  class="font-semibold">/</span><span class="font-light text-sm">night</span>
+              </p>
+            </div>
+            <p class="mt-4 font-light text-sm">Indulge in luxury with our deluxe oceanfront suite, offering panoramic
+              views of
+              the
+              sparkling sea. This
+              spacious suite features a king-size bed, a private balcony with direct ocean access, a separate living
+              area, and a luxurious bathroom with a whirlpool tub.</p>
+            <p class="mt-4 font-normal italic text-sm ">Amenities: Flat-screen TV, mini-bar, free Wi-Fi,
+              coffee maker,
+              in-room Jacuzzi.</p>
+          </div>
+
+        </div>
+        <!-- <div class="swiper-slide">Slide 5</div>
+        <div class="swiper-slide">Slide 6</div>
+        <div class="swiper-slide">Slide 7</div>
+        <div class="swiper-slide">Slide 8</div>
+        <div class="swiper-slide">Slide 9</div> -->
+      </div>
+      <div class="swiper-button-next md:opacity-100 opacity-0"></div>
+      <div class="swiper-button-prev md:opacity-100 opacity-0"></div>
+      <div class="swiper-pagination active:text-yellowBG"></div>
+    </div>
+
+
+  </section>
+
+
+  <!--! SECTION THREE -->
+  <!--? Implemented a flip card  -->
+  <section class="sectionThree font-headingFont py-16">
+    <div class="text-white flex flex-col justify-center gap-3 text-center items-center">
+      <h2 class="font-semibold md:text-3xl text-2xl uppercase">Discover the benefits of staying with us</h2>
+      <p class="font-bodyFont md:text-2xl text-lg font-normal">Where Every Stay is an Unforgettable Experience</p>
+    </div>
+
+    <!--! FLIP CARDS OUTER CONTAINER -- Flex Container -->
+    <div class="flex justify-center mt-10">
+      <!-- ! FLIP CARD CONTAINER -- GRID CONTAINER -->
+      <div class="md:grid md:grid-cols-3 md:gap-x-7 md:gap-y-5 flex flex-col gap-5  px-5 h-full">
+
+        <!-- ! FLIP CARDS - MAIN INNER -->
+        <!-- First Flip card -->
+        <div class="flip-card card">
+          <div class="flip-card-inner card rounded-2xl">
+
+            <div class="flip-card-front">
+              <img src="./SectionThreeAssets/front.png" class="h-[18em]" />
+            </div>
+
+
+            <div class="flip-card-back bg-flippedCard w-[258px] h-[18em] rounded-2xl py-3 px-5 flex items-end">
+              <p class="text-white font-bodyFont text-base text-left">
+                Our resort is perfect for families, offering a range of amenities and activities to keep everyone
+                entertained. From supervised kids' clubs to family-friendly dining options, we ensure that every member
+                of the family has a memorable stay.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Second Flip card -->
+        <div class="flip-card card">
+          <div class="flip-card-inner card rounded-2xl">
+            <div class="flip-card-front">
+              <img src="./SectionThreeAssets/front (1).png" class="h-[18em]" />
+            </div>
+            <div class="flip-card-back bg-flippedCard w-[258px] h-[18em] rounded-2xl py-3 px-5 flex items-end">
+              <p class="text-white font-bodyFont text-base text-left">
+                Discover a world of adventure and entertainment both on-site and in the surrounding area. Whether you're
+                seeking water sports, nature hikes, or cultural experiences, our resort is the gateway to a variety of
+                thrilling activities.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Third Flip card -->
+        <div class="flip-card card">
+          <div class="flip-card-inner card rounded-2xl">
+            <div class="flip-card-front">
+              <img src="./SectionThreeAssets/front (2).png" class="h-[18em]" />
+            </div>
+            <div class="flip-card-back bg-flippedCard w-[258px] h-[18em] rounded-2xl py-3 px-5 flex items-end">
+              <p class="text-white font-bodyFont text-base text-left">
+                Indulge in a world of leisure and entertainment with our top-notch amenities. From rejuvenating spa
+                treatments and exquisite dining to adventurous water sports and cultural experiences, our resort offers
+                a
+                diverse range of activities to satisfy every guest.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fourth Flip card -->
+        <div class="flip-card card">
+          <div class="flip-card-inner card rounded-2xl">
+            <div class="flip-card-front">
+              <img src="./SectionThreeAssets/front (3).png" class="h-[18em]" />
+            </div>
+            <div class="flip-card-back bg-flippedCard w-[258px] h-[18em] rounded-2xl py-3 px-5 flex items-end">
+              <p class="text-white font-bodyFont text-base text-left">
+                Experience opulent living in our tastefully designed rooms and suites. Each space is a sanctuary of
+                comfort, adorned with elegant furnishings, modern amenities, and breathtaking views. Your stay promises
+                relaxation and indulgence in every detail.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fifth Flip card -->
+        <div class="flip-card card">
+          <div class="flip-card-inner card rounded-2xl">
+            <div class="flip-card-front">
+              <img src="./SectionThreeAssets/front (4).png" class="h-[18em]" />
+            </div>
+            <div class="flip-card-back bg-flippedCard w-[258px] h-[18em] rounded-2xl py-3 px-5 flex items-end">
+              <p class="text-white font-bodyFont text-base text-left">
+                Indulge in a world of leisure and entertainment with our top-notch amenities. From rejuvenating spa
+                treatments and exquisite dining to adventurous water sports and cultural experiences, our resort offers
+                a
+                diverse range of activities to satisfy every guest.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sixth Flip card -->
+        <div class="flip-card card">
+          <div class="flip-card-inner card rounded-2xl">
+            <div class="flip-card-front">
+              <img src="./SectionThreeAssets/front (5).png" class="h-[18em]" />
+            </div>
+            <div class="flip-card-back bg-flippedCard w-[258px] h-[18em] rounded-2xl py-3 px-5 flex items-end">
+              <p class="text-white font-bodyFont text-base text-left">
+                Indulge in a world of leisure and entertainment with our top-notch amenities. From rejuvenating spa
+                treatments and exquisite dining to adventurous water sports and cultural experiences, our resort offers
+                a
+                diverse range of activities to satisfy every guest.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+  </section>
+
+
+  <!-- ! SECTION FOUR -->
+  <section class="sectionFour bg-mobileNav font-headingFont pt-10">
+    <div class="flex justify-end px-5 mb-14">
+      <div class="flex md:justify-between md:w-2/3 justify-center items-center text-center">
+
+        <h2 class="text-center text-2xl font-semibold text-whiteText uppercase justify-center">What Others Say About Us
+
+          <span class="flex justify-center mt-1"><img src="./SectionTwoAssets/Rectangle 2.png" class="h-1" /></span>
+        </h2>
+        <h5 class="text-yellowBG justify-end items-center hidden md:block font-medium font-bodyFont"><a href="#"
+            class="hover:underline">See all</a>
+
+        </h5>
+      </div>
+    </div>
+
+
+    <div class="flex md:justify-center border-b border-b-white flex-col gap-10">
+      <!-- Testimonials -->
+      <div class="flex md:flex-row gap-5 flex-col justify-center items-center">
+        <!-- 1st Testi -->
+        <div class="bg-greenBG rounded-2xl text-white border-greenBorder border w-80 ">
+          <div>
+            <img src="./SectionFourAssets/Frame 46.png" class="w-80" />
+          </div>
+          <div class="flex flex-col gap-3 p-4 ">
+            <div>
+              <div class="flex justify-between items-center">
+                <h5 class="font-semibold text-base">Sarah and John D</h5>
+                <p class="text-xs">2nd Jul-26 Jul</p>
+              </div>
+              <div class="flex gap-[3px]">
+                <img src="./SectionFourAssets/star.png" class="w-3 h-3" />
+                <img src="./SectionFourAssets/star.png" class="w-3 h-3" />
+                <img src="./SectionFourAssets/star.png" class="w-3 h-3" />
+                <img src="./SectionFourAssets/star.png" class="w-3 h-3" />
+                <img src="./SectionFourAssets/star.png" class="w-3 h-3" />
+              </div>
+            </div>
+
+            <div>
+              <p class="font-normal text-base">Our stay at <span class="text-yellowBG">HOTELS</span> was pure<br>
+                perfection! The
+                room was luxurious,
+                the<br>
+                service was
+                exceptional, and the views<br> were breathtaking. We can't wait<br> to return!</p>
+            </div>
+
+          </div>
+        </div>
+
+
+        <!-- 2nd Testi -->
+        <div class="bg-greenBG rounded-2xl text-white border-greenBorder border w-80">
+          <div>
+            <img src="./SectionFourAssets/Frame 49.png" class="w-80" />
+          </div>
+
+          <div class="flex flex-col gap-3 p-6 ">
+            <div>
+              <div class="flex justify-between items-center">
+                <h5 class="font-semibold text-base">David and Lisa M.</h5>
+                <p class="text-xs">2nd Jul-26 Jul</p>
+              </div>
+              <div class="flex gap-[3px]">
+                <img src="./SectionFourAssets/star.png" class="w-3 h-3" />
+                <img src="./SectionFourAssets/star.png" class="w-3 h-3" />
+                <img src="./SectionFourAssets/star.png" class="w-3 h-3" />
+                <img src="./SectionFourAssets/star.png" class="w-3 h-3" />
+                <img src="./SectionFourAssets/star.png" class="w-3 h-3" />
+              </div>
+            </div>
+
+            <div>
+              <p class="font-normal text-base">We had an amazing time at <span class="text-yellowBG">HOTELS</span>.<br>
+                The
+                staff was friendly, the room was<br> beautiful, and the location was<br> stunning. Highly recommended!
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- 3rd Testi -->
+        <div class="bg-greenBG rounded-2xl text-white border-greenBorder border w-80">
+          <div>
+            <img src="./SectionFourAssets/Frame 51.png" class="w-80" />
+          </div>
+
+          <div class="flex flex-col gap-3 p-4 ">
+            <div>
+              <div class="flex justify-between items-center">
+                <h5 class="font-semibold text-base">Emily and Michael S.</h5>
+                <p class="text-xs">2nd Jul-26 Jul</p>
+              </div>
+              <div class="flex gap-[3px]">
+                <img src="./SectionFourAssets/star.png" class="w-3 h-3" />
+                <img src="./SectionFourAssets/star.png" class="w-3 h-3" />
+                <img src="./SectionFourAssets/star.png" class="w-3 h-3" />
+                <img src="./SectionFourAssets/star.png" class="w-3 h-3" />
+                <img src="./SectionFourAssets/star.png" class="w-3 h-3" />
+              </div>
+            </div>
+
+            <div>
+              <p class="font-normal text-base">Our stay exceeded all expectations. The<br> service was top-notch, the
+                room was<br> elegant, and the ocean view was<br> mesmerizing. We can't wait to come<br> back to <span
+                  class="text-yellowBG">HOTELS</span>.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="flex justify-center md:mb-3 mb-5">
+        <button
+          class=" text-blueText bg-whiteText p-2 px-6 rounded-lg font-semibold cursor-pointer hover:bg-transparent hover:text-whiteText border-white border-2">BOOK
+          YOUR ESCAPE</button>
+      </div>
+
+    </div>
+
+    <div class="flex justify-center mt-16 mb-10">
+
+      <div class="flex md:flex-row flex-col gap-8 text-white font-headingFont justify-center items-center">
+        <!-- First half -->
+        <!-- Form div -->
+        <div class="text-center flex justify-center flex-col md:text-left gap-8 formAni">
+          <div class="flex flex-col-reverse md:flex-col gap-10 md:gap-3">
+            <h3 class="font-bodyFont text-2xl">Stay Updated with Exclusive<br class="md:hidden block"> Offers and Travel
+              Tips.</h3>
+            <h2 class="font-semibold text-2xl">NEWSLETTER</h2>
+          </div>
+
+          <form class="flex flex-col gap-7 md:gap-10 md:items-start" id="subscribeForm">
+            <input placeholder="Email address" required type="email"
+              class="font-bodyFont p-4 md:px-10 md:w-5/6 bg-transparent border border-white outline-none rounded-sm items-start email-input" />
+
+            <p id="output"></p>
+
+            <div class="md:flex md:justify-center md:items-center w-full">
+              <button
+                class=" text-blueText bg-whiteText p-2 px-6 rounded-lg font-semibold cursor-pointer hover:bg-transparent hover:text-whiteText border-white border-2 text-center w-full md:w-auto subscribe-btn"
+                type="submit">
+                SUBSCRIBE
+              </button>
+            </div>
+
+
+          </form>
+
+        </div>
+
+        <!-- Second Half -->
+        <!-- Picture div -->
+        <div class="items-end pictureAni">
+          <img src="./SectionFourAssets/Frame 53.png" class="h-96 items-end" />
+        </div>
+      </div>
+
+
+
+    </div>
+
+    <footer class="bg-footerGreen text-white py-5 px-10 flex md:justify-between flex-col md:flex-row gap-5 md:gap-0">
+      <!-- 1st Part -->
+      <div class="text-center md:text-left">
+        <ul class="flex flex-col ">
+          <li><a href="#" class="hover:underline-offset-2 hover:underline font-semibold">About us</a></li>
+          <li><a href="#" class="hover:underline-offset-2 hover:underline font-semibold">Product</a></li>
+          <li><a href="#" class="hover:underline-offset-2 hover:underline font-semibold">Services</a></li>
+          <li><a href="#" class="hover:underline-offset-2 hover:underline font-semibold">Blog</a></li>
+          <li><a href="#" class="hover:underline-offset-2 hover:underline font-semibold">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- 2nd Part -->
+      <div class="font-bodyFont md:text-right text-center ">
+        <div class="flex gap-6 flex-col">
+          <h2 class="text-2xl tracking-wider">Contact Information:</h2>
+          <ul class="list-none">
+            <li class="footer-li tracking-wider"> Phone: (123) 456-7890</li>
+            <li class="footer-li tracking-wider">Email: example@email.com</li>
+            <li class="footer-li tracking-wider">Address: 123 Resort Drive, Vacationland, USA</li>
+          </ul>
+        </div>
+      </div>
+
+    </footer>
+
+  </section>
+
+  <!-- SCRIPTS -->
+  <script src="./script.js" type="module"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+
+</body>
+
+</html>
