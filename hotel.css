@@ -20,7 +20,7 @@
 }
 
 .sectionOneMain {
-  animation: slideIn 1s forwards;
+  animation: slideIn 1s ease-in-out forwards;
 }
 
 @keyframes slideIn {
@@ -76,6 +76,10 @@
 }
 
 /* !SECTION TWO */
+
+/* .slide-div{
+  
+} */
 
 /* * Swiper */
 .swiper-pagination-bullet {

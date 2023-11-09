@@ -16,7 +16,7 @@
   <!--! SECTION ONE -->
   <!--? Implemented an overlay and a modal -->
   <section
-    class="sectionOne text-whiteText pt-10  md:pl-20 md:pr-10 px-5 max-w-full md:h-screen relative pb-16 bg-mobileNav">
+    class="sectionOne text-whiteText pt-10 md:pl-20 md:pr-10 px-5 max-w-full md:h-screen relative pb-16 bg-mobileNav w-full">
     <!-- Overlay Div -->
     <div class="overlay"></div>
     <!-- Serves as a Second  Section, Ends with the mobile nav ul-->
@@ -24,7 +24,7 @@
 
 
 
-      <header class="flex items-center justify-center md:justify-between  w-full">
+      <header class="flex items-center justify-center md:justify-between w-full xl:px-20">
 
         <!-- Desktop View -->
         <div class="md:block hidden font-headingFont text-white text-4xl font-bold cursor-pointer">
@@ -109,77 +109,248 @@
 
     <!-- Main Div -->
     <div
-      class="flex md:flex-row flex-col mt-20 md:mt-16 justify-center items-center md:justify-between gap-20 md:gap-0 sectionOneMain">
-      <!-- First half -->
-      <div>
-        <!-- Headings -->
-        <div class="mb-5">
-          <h2 class="text-white font-semibold text-2xl mb-4 text-center ">ESCAPE THE HUSTLE AND
-            BUSTLE.
-          </h2>
-          <h2 class="text-white font-normal text-2xl text-center md:text-left">DISCOVER TRANQUILITY IN OUR <br
-              class="md:block hidden">
-            BEACHFRONT PARADISE.</h2>
-
-        </div>
-
-        <!-- Paragraph Text -->
-        <p class="text-white  font-normal text-base font-bodyFont leading-snug mb-10 text-center md:text-left">
-          Amidst
-          the chaos of modern
-          life, our
-          resort
-          emerges as an oasis
-          of<br class="md:block hidden"> serenity. Tucked away in a pristine
-          natural setting. It offers a refuge<br class="md:block hidden"> from the daily hustle and bustle.</p>
-
-        <!-- Buttons -->
-
-        <div class="flex md:flex-row flex-col justify-start items-center md:gap-3 gap-4">
-          <button
-            class=" text-blueText bg-whiteText p-2 px-6 rounded-lg font-semibold cursor-pointer hover:bg-transparent md:hover:text-whiteText border-white border-2 hover:text-white">BOOK
-            YOUR ESCAPE</button>
-          <button
-            class="trans-btn p-2 px-9 md:px-6 text-blueText font-semibold rounded-lg border border-white  cursor-pointer bg-whiteText md:text-whiteText">Learn
-            more</button>
-        </div>
-
-      </div>
-
-      <!-- Second half -->
-      <div>
-        <!-- Mobile View -->
-        <div class="md:hidden flex flex-col gap-2 font-headingFont">
-          <!-- First Button -->
-          <div class="flex mobile-blur-div rounded-lg  p-1" id="triggerDiv">
-            <!-- Mini -->
-            <div class="flex w-full gap-2">
-              <h5 class="flex items-center gap-2 text-left text-blueText font-semibold ">
-                <span>
-                  <img src="./SectionOneAssets/calendar-01 (1).png" class="w-9 h-9" />
-                </span>
-                Check-in - Check-out
-                <span>
-                  <img src="./SectionOneAssets/Vector 2.png" class="h-8" />
-                </span>
-              </h5>
-
-              <h5 class="flex items-center gap-1 text-left text-blueText font-semibold ">
-                <span>
-                  <img src="./SectionOneAssets/line-md_account.png" class="w-6 h-6" />
-                </span>
-                Adult
-              </h5>
-            </div>
+      class="flex md:flex-row flex-col mt-20 md:mt-16 justify-center items-center md:justify-center gap-20 md:gap-0 sectionOneMain xl:px-20">
+      <div class=" flex md:flex-row flex-col md:justify-between justify-center w-full items-center gap-20 md:gap-0">
+        <!-- First half -->
+        <div class="flex flex-col ">
+          <!-- Headings -->
+          <div class="mb-5">
+            <h2 class="text-white font-semibold text-2xl mb-4 text-center ">ESCAPE THE HUSTLE AND
+              BUSTLE.
+            </h2>
+            <h2 class="text-white font-normal text-2xl text-center md:text-left">DISCOVER TRANQUILITY IN OUR <br
+                class="md:block hidden">
+              BEACHFRONT PARADISE.</h2>
 
           </div>
 
-          <!-- Popup  -->
-          <!-- Div Serves as an Overlay -->
-          <div id="popup" class="hidden absolute inset-0 bg-slate-500 bg-opacity-70 items-center justify-center ">
-            <!-- Main Popup Content -->
-            <div class="flex justify-center">
-              <div class="mobile-blur-div font-headingFont w-96 rounded-lg">
+          <!-- Paragraph Text -->
+          <p class="text-white  font-normal text-base font-bodyFont leading-snug mb-10 text-center md:text-left">
+            Amidst
+            the chaos of modern
+            life, our
+            resort
+            emerges as an oasis
+            of<br class="md:block hidden"> serenity. Tucked away in a pristine
+            natural setting. It offers a refuge<br class="md:block hidden"> from the daily hustle and bustle.</p>
+
+          <!-- Buttons -->
+
+          <div class="flex md:flex-row flex-col justify-start items-center md:gap-3 gap-4">
+            <button
+              class=" text-blueText bg-whiteText p-2 px-6 rounded-lg font-semibold cursor-pointer hover:bg-transparent md:hover:text-whiteText border-white border-2 hover:text-white">BOOK
+              YOUR ESCAPE</button>
+            <button
+              class="trans-btn p-2 px-9 md:px-6 text-blueText font-semibold rounded-lg border border-white  cursor-pointer bg-whiteText md:text-whiteText">Learn
+              more</button>
+          </div>
+
+        </div>
+
+        <!-- Second half -->
+        <div>
+          <!-- Mobile View -->
+          <div class="md:hidden flex flex-col gap-2 font-headingFont">
+            <!-- First Button -->
+            <div class="flex mobile-blur-div rounded-lg  p-1" id="triggerDiv">
+              <!-- Mini -->
+              <div class="flex w-full gap-2">
+                <h5 class="flex items-center gap-2 text-left text-blueText font-semibold ">
+                  <span>
+                    <img src="./SectionOneAssets/calendar-01 (1).png" class="w-9 h-9" />
+                  </span>
+                  Check-in - Check-out
+                  <span>
+                    <img src="./SectionOneAssets/Vector 2.png" class="h-8" />
+                  </span>
+                </h5>
+
+                <h5 class="flex items-center gap-1 text-left text-blueText font-semibold ">
+                  <span>
+                    <img src="./SectionOneAssets/line-md_account.png" class="w-6 h-6" />
+                  </span>
+                  Adult
+                </h5>
+              </div>
+
+            </div>
+
+            <!-- Popup  -->
+            <!-- Div Serves as an Overlay -->
+            <div id="popup"
+              class="hidden absolute inset-0 bg-slate-500 bg-opacity-70 items-center justify-center h-screen rounded-md">
+              <!-- Main Popup Content -->
+              <div class="flex justify-center">
+                <div class="mobile-blur-div font-headingFont w-96 rounded-lg">
+                  <!-- TOP -->
+                  <div class="flex hotel-top">
+                    <!-- Individual top -->
+                    <div class="bg-whiteText flex flex-wrap  p-2 px-3 gap-1 pl-3 rounded-tl-lg cursor-pointer">
+                      <img src="./SectionOneAssets/hotel-02.png" class="w-5 h-5" />
+                      <h5 class="font-semibold text-blueText">Hotel</h5>
+                    </div>
+
+                    <!-- Individual top -->
+                    <div class="bg-blueBG flex p-2 px-3 gap-1 pr-4 cursor-pointer text-center">
+                      <img src="./SectionOneAssets/calendar-01.png" class="w-5 h-5 " />
+                      <h5 class="font-semibold text-white">Monthly stays </h5>
+                    </div>
+                    <!-- Individual top -->
+                    <div class="bg-blueBG flex p-2 px-3 gap-1 pr-4 rounded-tr-lg cursor-pointer text-center">
+                      <img src="./SectionOneAssets/Vector.png" class="w-5 h-5" />
+                      <h5 class="font-semibold text-white">Private stays</h5>
+                    </div>
+                  </div>
+
+                  <!-- BOTTOM -->
+                  <div class="p-8 flex flex-col gap-4">
+                    <div class="flex justify-between">
+                      <!-- 1st set -->
+                      <div class="flex flex-col gap-5">
+                        <!-- Individual set -->
+                        <div class="flex flex-col gap-1 text-white">
+                          <div class="flex items-center gap-1">
+                            <h4 class="font-medium">Location</h4>
+                            <img src="./SectionOneAssets/arrow-down-01-sharp.png" class="w-4 h-4" />
+                          </div>
+                          <h6 class="text-xs opacity-50 font-semibold">CHEVRON</h6>
+
+                        </div>
+
+                        <!-- Individual set -->
+                        <div class="flex flex-col gap-1 text-white">
+                          <div class="flex items-center gap-1">
+                            <h4 class="font-medium">Check-in</h4>
+                            <img src="./SectionOneAssets/arrow-down-01-sharp.png" class="w-4 h-4" />
+                          </div>
+                          <h6 class="text-xs opacity-50 font-semibold">12-09-2024</h6>
+                        </div>
+
+
+                        <!-- Individual set -->
+                        <div class="flex flex-col gap-1 text-white">
+                          <div class="flex items-center gap-1">
+                            <h4 class="font-medium">Adults</h4>
+                            <img src="./SectionOneAssets/arrow-down-01-sharp (1).png" class="w-4 h-4" />
+                          </div>
+                          <h6 class="text-sm opacity-50 font-semibold">4</h6>
+                        </div>
+
+                        <!-- Individual set -->
+                        <div class="flex flex-col gap-1 text-white opacity-10">
+                          <div class="flex items-center gap-1">
+                            <h4 class="font-medium">Check-in</h4>
+                            <img src="./SectionOneAssets/arrow-down-01-sharp.png" class="w-4 h-4" />
+                          </div>
+                          <h6 class="text-xs  font-semibold">12-09-2024</h6>
+                        </div>
+
+                        <!-- Individual set -->
+                        <div class="flex flex-col gap-1 text-white opacity-10">
+                          <div class="flex items-center gap-1">
+                            <h4 class="font-medium">Adults</h4>
+                            <img src="./SectionOneAssets/arrow-down-01-sharp (1).png" class="w-4 h-4" />
+                          </div>
+                          <h6 class="text-sm  font-semibold">4</h6>
+                        </div>
+
+
+                      </div>
+
+                      <!-- Second Set -->
+                      <div class="flex flex-col gap-5">
+                        <!-- Individual set -->
+                        <button id="closeButton">
+                          <ion-icon name="close-sharp" size="large" class="text-blueText"></ion-icon>
+
+                        </button>
+
+                        <div class="flex flex-col gap-1 text-white opacity-0 pointer-events-auto">
+                          <div class="flex items-center gap-1">
+                            <h4 class="font-medium cursor-pointer">Location</h4>
+                            <img src="./SectionOneAssets/arrow-down-01-sharp.png" class="w-4 h-4" />
+                          </div>
+                          <h6 class="text-xs  font-semibold">CHEVRON</h6>
+
+                        </div>
+
+                        <!-- Individual set -->
+                        <div class="flex flex-col gap-1 text-white">
+                          <div class="flex items-center gap-1">
+                            <h4 class="font-medium">Check-out</h4>
+                            <img src="./SectionOneAssets/arrow-down-01-sharp.png" class="w-4 h-4" />
+                          </div>
+                          <h6 class="text-xs opacity-50 font-semibold">28-09-2024</h6>
+                        </div>
+
+
+                        <!-- Individual set -->
+                        <div class="flex flex-col gap-1 text-white">
+                          <div class="flex items-center gap-1">
+                            <h4 class="font-medium">Children</h4>
+                            <img src="./SectionOneAssets/arrow-down-01-sharp (1).png" class="w-4 h-4" />
+                          </div>
+                          <h6 class="text-sm opacity-50 font-semibold">3</h6>
+                        </div>
+
+                        <!-- Individual set -->
+                        <div class="flex flex-col gap-1 text-white opacity-10">
+                          <div class="flex items-center gap-1">
+                            <h4 class="font-medium">Check-in</h4>
+                            <img src="./SectionOneAssets/arrow-down-01-sharp.png" class="w-4 h-4" />
+                          </div>
+                          <h6 class="text-xs  font-semibold">12-09-2024</h6>
+                        </div>
+
+                        <!-- Individual set -->
+                        <div class="flex flex-col gap-1 text-white opacity-10">
+                          <div class="flex items-center gap-1">
+                            <h4 class="font-medium">Adults</h4>
+                            <img src="./SectionOneAssets/arrow-down-01-sharp (1).png" class="w-4 h-4" />
+                          </div>
+                          <h6 class="text-sm  font-semibold">4</h6>
+                        </div>
+
+
+                      </div>
+
+                    </div>
+
+                    <div class="flex justify-center items-center mt-2">
+                      <button
+                        class="bg-yellowBG flex gap-2 p-2 px-5 rounded-lg font-semibold cursor-pointer text-blueText">CHECK
+                        AVAILABILITY
+                        <span><img src="./SectionOneAssets/search.png" class="w-5 h-5" /></span>
+                      </button>
+                    </div>
+
+
+                  </div>
+
+
+                </div>
+                <!-- <div>
+                <button class=" text-blueText p-2 pl-5 pr-6 triangle-button text-right ">New</button>
+              </div> -->
+              </div>
+            </div>
+            <!-- End of Popup -->
+
+            <!-- Second Button -->
+            <div class="flex justify-center items-center mt-2">
+              <button
+                class="text-blueText bg-yellowBG flex gap-2 p-2 px-16 rounded-lg font-semibold cursor-pointer">CHECK
+                AVAILABILITY
+                <span><img src="./SectionOneAssets/search.png" class="w-5 h-5" /></span>
+              </button>
+            </div>
+          </div>
+
+
+          <!-- Desktop View -->
+          <div class="md:block hidden">
+            <div class="md:flex hidden gap-5 ">
+              <div class="blur-div font-headingFont">
                 <!-- TOP -->
                 <div class="flex hotel-top">
                   <!-- Individual top -->
@@ -189,12 +360,12 @@
                   </div>
 
                   <!-- Individual top -->
-                  <div class="bg-blueBG flex p-2 px-3 gap-1 pr-4 cursor-pointer text-center">
-                    <img src="./SectionOneAssets/calendar-01.png" class="w-5 h-5 " />
+                  <div class="bg-blueBG flex p-2 px-3 gap-1 pr-4 cursor-pointer">
+                    <img src="./SectionOneAssets/calendar-01.png" class="w-5 h-5" />
                     <h5 class="font-semibold text-white">Monthly stays </h5>
                   </div>
                   <!-- Individual top -->
-                  <div class="bg-blueBG flex p-2 px-3 gap-1 pr-4 rounded-tr-lg cursor-pointer text-center">
+                  <div class="bg-blueBG flex p-2 px-3 gap-1 pr-4 rounded-tr-lg cursor-pointer">
                     <img src="./SectionOneAssets/Vector.png" class="w-5 h-5" />
                     <h5 class="font-semibold text-white">Private stays</h5>
                   </div>
@@ -258,11 +429,6 @@
                     <!-- Second Set -->
                     <div class="flex flex-col gap-5">
                       <!-- Individual set -->
-                      <button id="closeButton">
-                        <ion-icon name="close-sharp" size="large" class="text-blueText"></ion-icon>
-
-                      </button>
-
                       <div class="flex flex-col gap-1 text-white opacity-0 pointer-events-auto">
                         <div class="flex items-center gap-1">
                           <h4 class="font-medium cursor-pointer">Location</h4>
@@ -313,7 +479,6 @@
                     </div>
 
                   </div>
-
                   <div class="flex justify-center items-center mt-2">
                     <button
                       class="bg-yellowBG flex gap-2 p-2 px-5 rounded-lg font-semibold cursor-pointer text-blueText">CHECK
@@ -327,177 +492,15 @@
 
 
               </div>
-              <!-- <div>
+              <div>
                 <button class=" text-blueText p-2 pl-5 pr-6 triangle-button text-right ">New</button>
-              </div> -->
-            </div>
-          </div>
-          <!-- End of Popup -->
-
-          <!-- Second Button -->
-          <div class="flex justify-center items-center mt-2">
-            <button class="text-blueText bg-yellowBG flex gap-2 p-2 px-16 rounded-lg font-semibold cursor-pointer">CHECK
-              AVAILABILITY
-              <span><img src="./SectionOneAssets/search.png" class="w-5 h-5" /></span>
-            </button>
-          </div>
-        </div>
-
-
-        <!-- Desktop View -->
-        <div class="md:block hidden">
-          <div class="md:flex hidden gap-5 ">
-            <div class="blur-div font-headingFont">
-              <!-- TOP -->
-              <div class="flex hotel-top">
-                <!-- Individual top -->
-                <div class="bg-whiteText flex p-2 px-3 gap-1 pl-3 rounded-tl-lg cursor-pointer">
-                  <img src="./SectionOneAssets/hotel-02.png" class="w-5 h-5" />
-                  <h5 class="font-semibold text-blueText">Hotel</h5>
-                </div>
-
-                <!-- Individual top -->
-                <div class="bg-blueBG flex p-2 px-3 gap-1 pr-4 cursor-pointer">
-                  <img src="./SectionOneAssets/calendar-01.png" class="w-5 h-5" />
-                  <h5 class="font-semibold text-white">Monthly stays </h5>
-                </div>
-                <!-- Individual top -->
-                <div class="bg-blueBG flex p-2 px-3 gap-1 pr-4 rounded-tr-lg cursor-pointer">
-                  <img src="./SectionOneAssets/Vector.png" class="w-5 h-5" />
-                  <h5 class="font-semibold text-white">Private stays</h5>
-                </div>
               </div>
-
-              <!-- BOTTOM -->
-              <div class="p-8 flex flex-col gap-4">
-                <div class="flex justify-between">
-                  <!-- 1st set -->
-                  <div class="flex flex-col gap-5">
-                    <!-- Individual set -->
-                    <div class="flex flex-col gap-1 text-white">
-                      <div class="flex items-center gap-1">
-                        <h4 class="font-medium">Location</h4>
-                        <img src="./SectionOneAssets/arrow-down-01-sharp.png" class="w-4 h-4" />
-                      </div>
-                      <h6 class="text-xs opacity-50 font-semibold">CHEVRON</h6>
-
-                    </div>
-
-                    <!-- Individual set -->
-                    <div class="flex flex-col gap-1 text-white">
-                      <div class="flex items-center gap-1">
-                        <h4 class="font-medium">Check-in</h4>
-                        <img src="./SectionOneAssets/arrow-down-01-sharp.png" class="w-4 h-4" />
-                      </div>
-                      <h6 class="text-xs opacity-50 font-semibold">12-09-2024</h6>
-                    </div>
-
-
-                    <!-- Individual set -->
-                    <div class="flex flex-col gap-1 text-white">
-                      <div class="flex items-center gap-1">
-                        <h4 class="font-medium">Adults</h4>
-                        <img src="./SectionOneAssets/arrow-down-01-sharp (1).png" class="w-4 h-4" />
-                      </div>
-                      <h6 class="text-sm opacity-50 font-semibold">4</h6>
-                    </div>
-
-                    <!-- Individual set -->
-                    <div class="flex flex-col gap-1 text-white opacity-10">
-                      <div class="flex items-center gap-1">
-                        <h4 class="font-medium">Check-in</h4>
-                        <img src="./SectionOneAssets/arrow-down-01-sharp.png" class="w-4 h-4" />
-                      </div>
-                      <h6 class="text-xs  font-semibold">12-09-2024</h6>
-                    </div>
-
-                    <!-- Individual set -->
-                    <div class="flex flex-col gap-1 text-white opacity-10">
-                      <div class="flex items-center gap-1">
-                        <h4 class="font-medium">Adults</h4>
-                        <img src="./SectionOneAssets/arrow-down-01-sharp (1).png" class="w-4 h-4" />
-                      </div>
-                      <h6 class="text-sm  font-semibold">4</h6>
-                    </div>
-
-
-                  </div>
-
-                  <!-- Second Set -->
-                  <div class="flex flex-col gap-5">
-                    <!-- Individual set -->
-                    <div class="flex flex-col gap-1 text-white opacity-0 pointer-events-auto">
-                      <div class="flex items-center gap-1">
-                        <h4 class="font-medium cursor-pointer">Location</h4>
-                        <img src="./SectionOneAssets/arrow-down-01-sharp.png" class="w-4 h-4" />
-                      </div>
-                      <h6 class="text-xs  font-semibold">CHEVRON</h6>
-
-                    </div>
-
-                    <!-- Individual set -->
-                    <div class="flex flex-col gap-1 text-white">
-                      <div class="flex items-center gap-1">
-                        <h4 class="font-medium">Check-out</h4>
-                        <img src="./SectionOneAssets/arrow-down-01-sharp.png" class="w-4 h-4" />
-                      </div>
-                      <h6 class="text-xs opacity-50 font-semibold">28-09-2024</h6>
-                    </div>
-
-
-                    <!-- Individual set -->
-                    <div class="flex flex-col gap-1 text-white">
-                      <div class="flex items-center gap-1">
-                        <h4 class="font-medium">Children</h4>
-                        <img src="./SectionOneAssets/arrow-down-01-sharp (1).png" class="w-4 h-4" />
-                      </div>
-                      <h6 class="text-sm opacity-50 font-semibold">3</h6>
-                    </div>
-
-                    <!-- Individual set -->
-                    <div class="flex flex-col gap-1 text-white opacity-10">
-                      <div class="flex items-center gap-1">
-                        <h4 class="font-medium">Check-in</h4>
-                        <img src="./SectionOneAssets/arrow-down-01-sharp.png" class="w-4 h-4" />
-                      </div>
-                      <h6 class="text-xs  font-semibold">12-09-2024</h6>
-                    </div>
-
-                    <!-- Individual set -->
-                    <div class="flex flex-col gap-1 text-white opacity-10">
-                      <div class="flex items-center gap-1">
-                        <h4 class="font-medium">Adults</h4>
-                        <img src="./SectionOneAssets/arrow-down-01-sharp (1).png" class="w-4 h-4" />
-                      </div>
-                      <h6 class="text-sm  font-semibold">4</h6>
-                    </div>
-
-
-                  </div>
-
-                </div>
-                <div class="flex justify-center items-center mt-2">
-                  <button
-                    class="bg-yellowBG flex gap-2 p-2 px-5 rounded-lg font-semibold cursor-pointer text-blueText">CHECK
-                    AVAILABILITY
-                    <span><img src="./SectionOneAssets/search.png" class="w-5 h-5" /></span>
-                  </button>
-                </div>
-
-
-              </div>
-
-
             </div>
-            <div>
-              <button class=" text-blueText p-2 pl-5 pr-6 triangle-button text-right ">New</button>
-            </div>
+
           </div>
 
         </div>
-
       </div>
-
     </div>
 
 
@@ -505,11 +508,12 @@
 
   <!--! SECTION TWO -->
   <!--? Implemented a swiper.js -->
-  <section class="sectionTwo bg-mobileNav  font-headingFont py-10">
-    <div class="flex justify-end px-5 mb-14">
+  <section class="sectionTwo bg-mobileNav  font-headingFont py-10 w-full">
+    <div class="flex justify-center items-center xl:justify-end px-5 mb-14">
       <div class="flex md:justify-between md:w-2/3 justify-center items-center text-center">
 
-        <h2 class="text-center text-2xl font-semibold text-whiteText uppercase justify-center">Discover Your
+        <h2 class="text-center text-2xl font-semibold text-whiteText uppercase justify-center md:text-center">Discover
+          Your
           Perfect Retreat
           <span class="flex justify-center mt-1"><img src="./SectionTwoAssets/Rectangle 2.png" class="h-1" /></span>
         </h2>
@@ -526,7 +530,7 @@
       <div class="swiper-wrapper py-5">
 
         <!--! First Slide -->
-        <div class="swiper-slide md:odd:w-1/2 rounded-xl shadow-2xl bg-mobileNav mb-5 border border-blueText">
+        <div class="swiper-slide md:odd:w-1/2 rounded-lg shadow-lg bg-mobileNav mb-5 border border-blueText">
           <div class="rounded-lg">
             <img src="./SectionTwoAssets/unsplash_T5pL6ciEn-I.png" class="h-1/2 object-cover rounded-lg" />
           </div>
@@ -553,9 +557,9 @@
         </div>
 
         <!--! Second Slide -->
-        <div class="swiper-slide md:even:w-1/2 rounded-xl shadow-2xl bg-mobileNav mb-5 border border-blueText">
+        <div class="swiper-slide md:even:w-1/2 rounded-lg shadow-lg bg-mobileNav mb-5 border border-blueText">
           <div class="rounded-lg">
-            <img src="./SectionTwoAssets/unsplash_T5pL6ciEn-I (2).png" class="h-1/2 object-cover rounded-lg" />
+            <img src="./SectionTwoAssets/unsplash_T5pL6ciEn-I (2).png" class="h-1/2 object-cover rounded-lg " />
           </div>
 
           <div class="px-4 pb-5 text-white mt-5 font-headingFont">
@@ -576,7 +580,7 @@
         </div>
 
         <!--! Third Slide -->
-        <div class="swiper-slide md:odd:w-1/2 rounded-xl shadow-2xl bg-mobileNav mb-5 border border-blueText">
+        <div class="swiper-slide md:odd:w-1/2 rounded-lg shadow-lg bg-mobileNav mb-5 border border-blueText">
           <div class="rounded-lg">
             <img src="./SectionTwoAssets/unsplash_T5pL6ciEn-I.png" class="h-1/2 object-cover rounded-lg" />
           </div>
@@ -603,7 +607,7 @@
         </div>
 
         <!--! Fourth Slide  -->
-        <div class="swiper-slide md:even:w-1/2 rounded-xl shadow-2xl bg-mobileNav mb-5 border border-blueText">
+        <div class="swiper-slide md:even:w-1/2 rounded-lg shadow-lg bg-mobileNav mb-5 border border-blueText">
           <div class="rounded-lg">
             <img src="./SectionTwoAssets/unsplash_T5pL6ciEn-I (2).png" class="h-1/2 object-cover rounded-lg" />
           </div>
@@ -626,7 +630,7 @@
         </div>
 
         <!--! Fifth Slide -->
-        <div class="swiper-slide md:odd:w-1/2 rounded-xl shadow-2xl bg-mobileNav mb-5 border border-blueText">
+        <div class="swiper-slide md:odd:w-1/2 rounded-lg shadow-lg bg-mobileNav mb-5 border border-blueText">
           <div class="rounded-lg">
             <img src="./SectionTwoAssets/unsplash_T5pL6ciEn-I.png" class="h-1/2 object-cover rounded-lg" />
           </div>
@@ -668,7 +672,7 @@
 
   <!--! SECTION THREE -->
   <!--? Implemented a flip card  -->
-  <section class="sectionThree font-headingFont py-16">
+  <section class="sectionThree font-headingFont py-16 w-full">
     <div class="text-white flex flex-col justify-center gap-3 text-center items-center">
       <h2 class="font-semibold md:text-3xl text-2xl uppercase">Discover the benefits of staying with us</h2>
       <p class="font-bodyFont md:text-2xl text-lg font-normal">Where Every Stay is an Unforgettable Experience</p>
@@ -791,8 +795,8 @@
 
 
   <!-- ! SECTION FOUR -->
-  <section class="sectionFour bg-mobileNav font-headingFont pt-10">
-    <div class="flex justify-end px-5 mb-14">
+  <section class="sectionFour bg-mobileNav font-headingFont pt-10 w-full">
+    <div class="flex px-5 mb-14 justify-center items-center xl:justify-end">
       <div class="flex md:justify-between md:w-2/3 justify-center items-center text-center">
 
         <h2 class="text-center text-2xl font-semibold text-whiteText uppercase justify-center">What Others Say About Us
