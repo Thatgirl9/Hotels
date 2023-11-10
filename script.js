@@ -58,15 +58,12 @@ var swiper = new Swiper(".mySwiper", {
 
 // ! FLIP CARD
 
-const card = document.querySelectorAll('.card');
+function toggleCard() {
+  const card = document.querySelector('.card');
+  card.classList.toggle('active');
+}
 
-// card.addEventListener('click', () => {
-//   if (card.style.transform === 'rotateY(180deg)') {
-//     card.style.transform = 'rotateY(0deg)';
-//   } else {
-//     card.style.transform = 'rotateY(180deg)';
-//   }
-// });
+
 
 // ! SUBSCRIBE FORM
 
