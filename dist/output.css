@@ -1666,6 +1666,14 @@ video {
 }
 
 @media (min-width: 1280px) {
+  .xl\:items-center {
+    align-items: center;
+  }
+
+  .xl\:justify-center {
+    justify-content: center;
+  }
+
   .xl\:bg-cover {
     background-size: cover;
   }
