@@ -1665,7 +1665,17 @@ video {
   }
 }
 
+@media (min-width: 1024px) {
+  .lg\:h-screen {
+    height: 100vh;
+  }
+}
+
 @media (min-width: 1280px) {
+  .xl\:h-screen {
+    height: 100vh;
+  }
+
   .xl\:items-center {
     align-items: center;
   }
