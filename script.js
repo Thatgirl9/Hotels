@@ -11,6 +11,7 @@ btn.addEventListener("click", () => {
   nav.classList.toggle("hidden");
 });
 
+// ! POP UP
 const triggerDiv = document.getElementById('triggerDiv');
 const popup = document.getElementById('popup');
 const closeButton = document.getElementById('closeButton');

@@ -178,11 +178,20 @@
 
             <!-- Popup  -->
             <!-- Div Serves as an Overlay -->
-            <div id="popup"
-              class="hidden absolute inset-0 bg-slate-500 bg-opacity-70 items-center justify-center h-screen rounded-md">
+            <div id="popup" class="hidden  absolute inset-0 justify-center items-center  rounded-md">
+
+
               <!-- Main Popup Content -->
-              <div class="flex justify-center">
-                <div class="mobile-blur-div font-headingFont w-96 rounded-lg">
+              <div class="flex justify-center mt-10 flex-col items-center gap-1">
+                <!-- BUTTON -->
+                <div class="mobile-blur-div rounded-full">
+                  <button id="closeButton" class="flex items-center justify-center">
+                    <ion-icon name="close-sharp" size="large" class="text-blueText"></ion-icon>
+
+                  </button>
+                </div>
+
+                <div class="bg-gray-700 font-headingFont  rounded-lg justify-center items-center">
                   <!-- TOP -->
                   <div class="flex hotel-top">
                     <!-- Individual top -->
@@ -261,10 +270,7 @@
                       <!-- Second Set -->
                       <div class="flex flex-col gap-5">
                         <!-- Individual set -->
-                        <button id="closeButton">
-                          <ion-icon name="close-sharp" size="large" class="text-blueText"></ion-icon>
 
-                        </button>
 
                         <div class="flex flex-col gap-1 text-white opacity-0 pointer-events-auto">
                           <div class="flex items-center gap-1">
@@ -338,13 +344,13 @@
             <!-- End of Popup -->
 
             <!-- Second Button -->
-            <div class="flex justify-center items-center mt-2">
+            <!-- <div class="flex justify-center items-center mt-2">
               <button
                 class="text-blueText bg-yellowBG flex gap-2 p-2 px-16 rounded-lg font-semibold cursor-pointer">CHECK
                 AVAILABILITY
                 <span><img src="./SectionOneAssets/search.png" class="w-5 h-5" /></span>
               </button>
-            </div>
+            </div> -->
           </div>
 
 
