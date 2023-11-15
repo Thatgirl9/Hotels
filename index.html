@@ -16,7 +16,7 @@
   <!--! SECTION ONE -->
   <!--? Implemented an overlay and a modal -->
   <section
-    class="sectionOne text-whiteText pt-10 md:pl-20 md:pr-10 px-5 max-w-full  relative pb-16 bg-mobileNav w-full xl:bg-cover">
+    class="sectionOne text-whiteText pt-10 md:pl-20 md:pr-10 px-5 max-w-full  relative pb-16 bg-mobileNav w-full xl:bg-cover max-h-screen ">
     <!-- Overlay Div -->
     <div class="overlay"></div>
     <!-- Serves as a Second  Section, Ends with the mobile nav ul-->
@@ -24,17 +24,17 @@
 
 
 
-      <header class="flex items-center justify-center md:justify-between w-full xl:px-20 sectionOneMain">
+      <header class="flex items-center justify-center lg:justify-between w-full xl:px-20 sectionOneMain">
 
         <!-- Desktop View -->
-        <div class="md:block hidden font-headingFont text-white text-4xl font-bold cursor-pointer">
+        <div class="lg:block hidden font-headingFont text-white text-4xl font-bold cursor-pointer">
           <h1>Hotels</h1>
         </div>
 
         <!-- MOBILE VIEW -->
-        <div class="flex flex-row items-center w-full justify-between md:hidden">
+        <div class="flex flex-row items-center w-full justify-between lg:hidden">
           <!-- HAMBURGER MENU -->
-          <button id="menu-btn" class="block hamburger md:hidden focus:outline-none items-end">
+          <button id="menu-btn" class="block hamburger lg:hidden focus:outline-none items-end">
             <span class="hamburger-top"></span>
             <span class="hamburger-middle"></span>
             <span class="hamburger-bottom"></span>
@@ -47,7 +47,7 @@
 
           <!-- Mobile View -->
           <div>
-            <div class="md:hidden block ">
+            <div class="lg:hidden block ">
               <button
                 class="bg-yellowBG text-blueText rounded-md cursor-pointer p-2 px-3 font-semibold text-base items-end">Gallery</button>
             </div>
@@ -57,7 +57,7 @@
 
         <!-- Desktop View -->
         <nav class="">
-          <ul class="md:flex text-whiteText md:gap-8 font-semibold text-base md:items-center hidden">
+          <ul class="lg:flex text-whiteText lg:gap-8 font-semibold text-base lg:items-center hidden">
             <li>
               <a class="text-whiteText cursor-pointer active:underline hover:underline" href="#">About us</a>
             </li>
@@ -77,14 +77,14 @@
           </ul>
         </nav>
         <button
-          class="bg-yellowBG text-blueText rounded-md cursor-pointer p-2 px-3 font-semibold text-base hidden md:block">
+          class="bg-yellowBG text-blueText rounded-md cursor-pointer p-2 px-3 font-semibold text-base hidden lg:block">
           <a class="" href="#">Gallery</a>
         </button>
 
       </header>
 
       <!-- MOBILE SCREEN NAV -->
-      <div class="md:hidden">
+      <div class="lg:hidden">
         <ul id="menu"
           class="nav-menu text-whiteText absolute font-semibold text-base items-center hidden gap-8 bg-mobileNav flex-col justify-center pt-7 rounded-tr-lg rounded-br-lg z-50">
           <li>
@@ -110,23 +110,23 @@
 
     <!-- Main Div -->
     <div
-      class="flex md:flex-row flex-col mt-20 md:mt-16 justify-center items-center md:justify-center gap-20 md:gap-0 sectionOneMain xl:px-20 xl:justify-center xl:items-center">
-      <div class=" flex md:flex-row flex-col md:justify-between justify-center w-full items-center gap-20 md:gap-0 ">
+      class="flex lg:flex-row flex-col mt-20 lg:mt-16 justify-center items-center lg:justify-center gap-20 lg:gap-0 sectionOneMain xl:px-20 xl:justify-center xl:items-center">
+      <div class=" flex lg:flex-row flex-col lg:justify-between justify-center w-full items-center gap-20 lg:gap-0 ">
         <!-- First half -->
-        <div class="flex flex-col xl:text-left">
+        <div class="flex flex-col xl:text-left w-full text-center">
           <!-- Headings -->
           <div class="mb-5">
-            <h2 class="text-white font-semibold text-2xl mb-4 text-center md:text-left">ESCAPE THE HUSTLE AND
+            <h2 class="text-white font-semibold text-2xl mb-4 text-center lg:text-left">ESCAPE THE HUSTLE AND
               BUSTLE.
             </h2>
-            <h2 class="text-white font-normal text-2xl text-center md:text-left">DISCOVER TRANQUILITY IN OUR <br
-                class="md:block hidden">
+            <h2 class="text-white font-normal text-2xl text-center lg:text-left">DISCOVER TRANQUILITY IN OUR <br
+                class="lg:block hidden">
               BEACHFRONT PARADISE.</h2>
 
           </div>
 
           <!-- Paragraph Text -->
-          <p class="text-white  font-normal text-base font-bodyFont leading-snug mb-10 text-center md:text-left">
+          <p class="text-white  font-normal text-base font-bodyFont leading-snug mb-10 text-center lg:text-left">
             Amidst
             the chaos of modern
             life, our
@@ -137,21 +137,21 @@
 
           <!-- Buttons -->
 
-          <div class="flex md:flex-row flex-col justify-start items-center md:gap-3 gap-4">
+          <div class="flex lg:flex-row flex-col justify-start items-center lg:gap-3 gap-4">
             <button
               class=" text-blueText bg-whiteText p-2 px-6 rounded-lg font-semibold cursor-pointer hover:bg-transparent md:hover:text-whiteText border-white border-2 hover:text-white">BOOK
               YOUR ESCAPE</button>
             <button
-              class="trans-btn p-2 px-9 md:px-6 text-blueText font-semibold rounded-lg border border-white  cursor-pointer bg-whiteText md:text-whiteText">Learn
+              class="trans-btn p-2 px-9 md:px-6 text-blueText font-semibold rounded-lg border border-white  cursor-pointer bg-whiteText lg:text-whiteText">Learn
               more</button>
           </div>
 
         </div>
 
         <!-- Second half -->
-        <div>
+        <div class=" md:w-5/6 w-full">
           <!-- Mobile View -->
-          <div class="md:hidden flex flex-col gap-2 font-headingFont">
+          <div class="lg:hidden flex flex-col gap-2 font-headingFont ">
             <!-- First Button -->
             <div class="flex mobile-blur-div rounded-lg  p-1" id="triggerDiv">
               <!-- Mini -->
@@ -184,9 +184,9 @@
               <!-- Main Popup Content -->
               <div class="flex justify-center mt-10 flex-col items-center gap-1">
                 <!-- BUTTON -->
-                <div class="mobile-blur-div rounded-full">
+                <div class="bg-blueText rounded-full">
                   <button id="closeButton" class="flex items-center justify-center">
-                    <ion-icon name="close-sharp" size="large" class="text-blueText"></ion-icon>
+                    <ion-icon name="close-sharp" size="large" class="text-yellowBG"></ion-icon>
 
                   </button>
                 </div>
@@ -355,7 +355,7 @@
 
 
           <!-- Desktop View -->
-          <div class="md:block hidden ">
+          <div class="lg:block hidden ">
             <div class="md:flex hidden gap-5 ">
               <div class="blur-div font-headingFont">
                 <!-- TOP -->
@@ -516,8 +516,8 @@
   <!--! SECTION TWO -->
   <!--? Implemented a swiper.js -->
   <section class="sectionTwo bg-mobileNav  font-headingFont py-10 w-full">
-    <div class="flex justify-center items-center md:justify-end  px-5 mb-14">
-      <div class="flex md:justify-between md:w-2/3 justify-center items-center text-center">
+    <div class="flex justify-center items-center lg:justify-end  px-5 mb-14 ">
+      <div class="flex lg:justify-between lg:w-3/4 xl:w-2/3 justify-center items-center text-center">
 
         <h2 class="text-center text-2xl font-semibold text-whiteText uppercase justify-center md:text-center">
           Discover
@@ -525,7 +525,7 @@
           Perfect Retreat
           <span class="flex justify-center mt-1"><img src="./SectionTwoAssets/Rectangle 2.png" class="h-1" /></span>
         </h2>
-        <h5 class="text-yellowBG justify-end items-center hidden md:block font-semibold"><a href="#"
+        <h5 class="text-yellowBG  xl:justify-end items-center text-left hidden lg:block font-semibold"><a href="#"
             class="hover:underline">View all
             accommodations</a>
 
