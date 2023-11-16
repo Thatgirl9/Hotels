@@ -16,7 +16,8 @@
   <!--! SECTION ONE -->
   <!--? Implemented an overlay and a modal -->
   <section
-    class="sectionOne text-whiteText pt-10 md:pl-20 md:pr-10 px-5 max-w-full  relative pb-16 bg-mobileNav w-full xl:bg-cover lg:max-h-screen ">
+    class="sectionOne text-whiteText pt-10 md:pl-20 md:pr-10 px-5 max-w-full  relative pb-16 bg-mobileNav w-full xl:bg-cover lg:max-h-screen "
+    id="scroll-back">
     <!-- Overlay Div -->
     <div class="overlay"></div>
     <!-- Serves as a Second  Section, Ends with the mobile nav ul-->
@@ -77,7 +78,7 @@
           </ul>
         </nav>
         <button
-          class="bg-yellowBG text-blueText rounded-md cursor-pointer p-2 px-3 font-semibold text-base hidden lg:block">
+          class="bg-yellowBG text-blueText rounded-md cursor-pointer p-2 lg:px-[26px]  font-semibold text-base hidden lg:block">
           <a class="" href="#">Gallery</a>
         </button>
 
@@ -86,22 +87,26 @@
       <!-- MOBILE SCREEN NAV -->
       <div class="lg:hidden">
         <ul id="menu"
-          class="nav-menu text-whiteText absolute font-semibold text-base items-center hidden gap-8 bg-mobileNav flex-col justify-center pt-7 rounded-tr-lg rounded-br-lg z-50">
-          <li>
-            <a class="text-whiteText cursor-pointer active:underline hover:underline" href="#">About us</a>
-          </li>
-          <li>
-            <a class="text-whiteText cursor-pointer active:underline hover:underline" href="#">Products</a>
-          </li>
-          <li>
-            <a class="text-whiteText cursor-pointer active:underline hover:underline" href="#">Services</a>
-          </li>
-          <li>
-            <a class="text-whiteText cursor-pointer active:underline hover:underline" href="#">Blog</a>
-          </li>
-          <li>
-            <a class="text-whiteText cursor-pointer active:underline hover:underline" href="#">Contact</a>
-          </li>
+          class="nav-menu text-whiteText absolute font-semibold text-base  hidden gap-8 bg-mobileNav flex-col  pt-7 rounded-tr-lg rounded-br-lg z-50 w-[50%] md:w-[40%]">
+          <div class=" flex flex-col gap-12 p-10">
+
+
+            <li>
+              <a class="text-whiteText cursor-pointer active:underline hover:underline" href="#">About us</a>
+            </li>
+            <li>
+              <a class="text-whiteText cursor-pointer active:underline hover:underline" href="#">Products</a>
+            </li>
+            <li>
+              <a class="text-whiteText cursor-pointer active:underline hover:underline" href="#">Services</a>
+            </li>
+            <li>
+              <a class="text-whiteText cursor-pointer active:underline hover:underline" href="#">Blog</a>
+            </li>
+            <li>
+              <a class="text-whiteText cursor-pointer active:underline hover:underline" href="#">Contact</a>
+            </li>
+          </div>
         </ul>
       </div>
     </div>
@@ -153,25 +158,46 @@
           <!-- Mobile View -->
           <div class="lg:hidden flex flex-col gap-2 font-headingFont ">
             <!-- First Button -->
-            <div class="flex mobile-blur-div rounded-lg  p-1" id="triggerDiv">
+            <div class="flex mobile-blur-div rounded-lg p-1" id="triggerDiv">
               <!-- Mini -->
-              <div class="flex w-full gap-2">
+              <div class="flex md:px-[32] md:py-[16] w-full gap-2 md:justify-evenly justify-center items-center ">
                 <h5 class="flex items-center gap-2 text-left text-blueText font-semibold ">
                   <span>
                     <img src="./SectionOneAssets/calendar-01 (1).png" class="w-9 h-9" />
                   </span>
                   Check-in - Check-out
+
+                </h5>
+
+                <div>
                   <span>
                     <img src="./SectionOneAssets/Vector 2.png" class="h-8" />
                   </span>
-                </h5>
+                </div>
 
-                <h5 class="flex items-center gap-1 text-left text-blueText font-semibold ">
+                <h5 class="flex items-center gap-2 text-left text-blueText font-semibold ">
                   <span>
                     <img src="./SectionOneAssets/line-md_account.png" class="w-6 h-6" />
                   </span>
                   Adult
+
                 </h5>
+
+                <div class="hidden md:block">
+                  <span>
+                    <img src="./SectionOneAssets/Vector 2.png" class="h-8" />
+                  </span>
+                </div>
+
+                <div class="hidden md:flex items-center ">
+                  <h5 class="flex items-center gap-1 text-left text-blueText font-semibold">
+                    <span>
+                      <img src="./SectionOneAssets/fa6-solid_children.png" class="w-5 h-5" />
+                    </span>
+                    Children
+                  </h5>
+                </div>
+
               </div>
 
             </div>
@@ -936,9 +962,10 @@
 
     </div>
 
-    <div class="flex justify-center mt-16 mb-10">
+    <div class="flex justify-center mt-16 mb-10 ">
 
-      <div class="flex md:flex-row flex-col gap-8 text-white font-headingFont justify-center items-center">
+      <div
+        class="flex md:flex-row flex-col gap-8 text-white font-headingFont justify-center items-center md:pl-10 lg:pl-0">
         <!-- First half -->
         <!-- Form div -->
         <div class="text-center flex justify-center flex-col md:text-left gap-8 formAni">
@@ -956,7 +983,7 @@
 
             <div class="md:flex md:justify-center md:items-center w-full">
               <button
-                class=" text-blueText bg-whiteText p-2 px-6 rounded-lg font-semibold cursor-pointer hover:bg-transparent hover:text-whiteText border-white border-2 text-center w-full md:w-auto subscribe-btn"
+                class=" text-blueText bg-whiteText p-2 px-6 md:px-20 rounded-lg font-semibold cursor-pointer hover:bg-transparent hover:text-whiteText border-white border-2 text-center w-full md:w-auto subscribe-btn"
                 type="submit">
                 SUBSCRIBE
               </button>
@@ -982,11 +1009,11 @@
       <!-- 1st Part -->
       <div class="text-center md:text-left">
         <ul class="flex flex-col ">
-          <li><a href="#" class="hover:underline-offset-2 hover:underline font-semibold">About us</a></li>
-          <li><a href="#" class="hover:underline-offset-2 hover:underline font-semibold">Product</a></li>
-          <li><a href="#" class="hover:underline-offset-2 hover:underline font-semibold">Services</a></li>
-          <li><a href="#" class="hover:underline-offset-2 hover:underline font-semibold">Blog</a></li>
-          <li><a href="#" class="hover:underline-offset-2 hover:underline font-semibold">Contact</a></li>
+          <li><a href="#scroll-back" class="hover:underline-offset-2 hover:underline font-semibold">About us</a></li>
+          <li><a href="#scroll-back" class="hover:underline-offset-2 hover:underline font-semibold">Product</a></li>
+          <li><a href="#scroll-back" class="hover:underline-offset-2 hover:underline font-semibold">Services</a></li>
+          <li><a href="#scroll-back" class="hover:underline-offset-2 hover:underline font-semibold">Blog</a></li>
+          <li><a href="#scroll-back" class="hover:underline-offset-2 hover:underline font-semibold">Contact</a></li>
         </ul>
       </div>
 
