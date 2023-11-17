@@ -211,7 +211,7 @@
 
 /*! MOBILE SCREEN  */
 
-@media screen and (max-width: 769px) and (min-width: 769px) {
+@media screen and (max-width: 769px) {
   /* ! SECTION ONE */
   .sectionOne {
     background-image: url(../SectionOneAssets/image\ 2.png);
@@ -236,27 +236,27 @@
 
   /* NAV MENU */
 
-  .nav-menu {
+  /* .nav-menu {
     left: 0;
     height: 100vh;
     top: 5em;
     /* width: 50%; */
 
-    /* opacity: 3; */
-    /* transform: translateY(100%); */
+  /* opacity: 3; */
+  /* transform: translateY(100%); 
     transition: all 0.9s ease-in-out;
   }
 
   /* Hamburger Menu */
-  .hamburger {
+  /* .hamburger {
     cursor: pointer;
     width: 24px;
     height: 24px;
     transition: all 0.3s ease-in-out;
     position: relative;
-  }
+  } */
 
-  .hamburger-top,
+  /* .hamburger-top,
   .hamburger-middle,
   .hamburger-bottom {
     position: absolute;
@@ -293,7 +293,7 @@
 
   .open .hamburger-bottom {
     transform: rotate(-45deg) translateY(6px) translate(6px);
-  }
+  } */
 
   .mobile-blur-div {
     background: linear-gradient(
